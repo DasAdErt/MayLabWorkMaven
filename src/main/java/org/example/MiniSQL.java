@@ -3,7 +3,7 @@ package org.example;
 import java.util.*;
 
 public class MiniSQL {
-    private List<Map<String, Object>> rows = new ArrayList<>();
+    private final List<Map<String, Object>> rows = new ArrayList<>();
 
     public List<Map<String, Object>> start(String request) {
         StringBuilder function = new StringBuilder();
